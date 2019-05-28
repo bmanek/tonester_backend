@@ -1,0 +1,8 @@
+2019-05-28 12:14:47.526 EDT [90789] LOG:  listening on IPv6 address "::1", port 5432
+2019-05-28 12:14:47.526 EDT [90789] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2019-05-28 12:14:47.528 EDT [90789] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2019-05-28 12:14:47.542 EDT [90790] LOG:  database system was shut down at 2019-05-28 12:14:29 EDT
+2019-05-28 12:14:47.547 EDT [90789] LOG:  database system is ready to accept connections
+2019-05-28 12:14:57.129 EDT [90814] FATAL:  database "tonester_backend_development" does not exist
+2019-05-28 12:15:00.970 EDT [90818] FATAL:  database "tonester_backend_development" does not exist
+2019-05-28 12:15:05.105 EDT [90820] FATAL:  database "tonester_backend_development" does not exist
