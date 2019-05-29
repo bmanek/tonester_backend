@@ -10,16 +10,15 @@ class UsersController < ApplicationController
    user = User.find_by(username: params[:username])
 
     if user
-      render json: user
+      render json: User.find(user.id), include: '**'
     else
       render json: {message: "try harder, buddy!"}
     end
   end
 
-  
-  def show
 
-    render json: User.find(params[:id])
+  def show
+    render json: User.find(params[:id]), include: '**'
   end
 
   def create
