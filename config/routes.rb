@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   resources :users
   post "/login", to: "users#login"
   resources :playlists
+  resources :songs
+  post "/search", to: "songs#search"
 
   # resources :playlists
   # resources :songs
