@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   resources :playlists
   resources :songs
   post "/search", to: "songs#search"
+  resources :playlistsongs
 
   # resources :playlists
   # resources :songs

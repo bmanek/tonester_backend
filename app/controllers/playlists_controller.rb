@@ -1,5 +1,5 @@
 class PlaylistsController < ApplicationController
-    def index 
-    render json: Playlist.all
-    end 
+    def index
+    render json: PlaylistSong.all
+    end
 end
