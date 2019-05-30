@@ -7,19 +7,14 @@ class UsersController < ApplicationController
   end
 
   def login
-    # session [:username] = params[:username]
-    # counter = 3
+    
     user = User.find_by(username: params[:username])
 
     if user
       render json: User.find(user.id), include: '**'
     else
       render json: {message: "Please try again, buddy!"}
-    #   # counter -= 1
-    # else counter = 0
-    #   render json: {message: "Please create an account"}
-
-
+      
     end
   end
 
