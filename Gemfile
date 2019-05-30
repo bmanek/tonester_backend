@@ -3,6 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.1'
 
+# gem 'rack', '~>2.0.7'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.0.rc1'
 # Use postgresql as the database for Active Record
@@ -16,6 +18,8 @@ gem 'puma', '~> 3.11'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem 'active_model_serializers'
+
+# gem 'json'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
@@ -24,6 +28,8 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 gem 'rack-cors'
+
+gem 'rspotify'
 
 # gem 'active_model_serializers'
 
