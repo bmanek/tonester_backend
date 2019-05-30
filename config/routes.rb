@@ -4,8 +4,7 @@ Rails.application.routes.draw do
   post "/login", to: "users#login"
   resources :playlists
   resources :songs
-  post "/search", to: "songs#search"
-  resources :playlistsongs
+ 
 
   # resources :playlists
   # resources :songs
