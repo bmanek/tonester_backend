@@ -6,3 +6,9 @@
 2019-05-28 12:14:57.129 EDT [90814] FATAL:  database "tonester_backend_development" does not exist
 2019-05-28 12:15:00.970 EDT [90818] FATAL:  database "tonester_backend_development" does not exist
 2019-05-28 12:15:05.105 EDT [90820] FATAL:  database "tonester_backend_development" does not exist
+2019-05-30 08:57:17.345 EDT [19982] ERROR:  database "tonester_backend_development" is being accessed by other users
+2019-05-30 08:57:17.345 EDT [19982] DETAIL:  There is 1 other session using the database.
+2019-05-30 08:57:17.345 EDT [19982] STATEMENT:  DROP DATABASE IF EXISTS "tonester_backend_development"
+2019-05-30 08:57:31.246 EDT [20003] ERROR:  database "tonester_backend_development" is being accessed by other users
+2019-05-30 08:57:31.246 EDT [20003] DETAIL:  There is 1 other session using the database.
+2019-05-30 08:57:31.246 EDT [20003] STATEMENT:  DROP DATABASE IF EXISTS "tonester_backend_development"

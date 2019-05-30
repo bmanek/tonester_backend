@@ -3,8 +3,10 @@ Rails.application.routes.draw do
   resources :users
   post "/login", to: "users#login"
   resources :playlists
+  delete '/delete', to: "playlists#destroy"
+  delete '/playlistdelete/:id', to: "playlists#playlistDelete"
   resources :songs
- 
+
 
   # resources :playlists
   # resources :songs
