@@ -33,10 +33,10 @@ class UsersController < ApplicationController
   end
 
   def create
-    if User.find_by(params[:usernae])
+    if User.find_by(username: params[:username])
       render json: {message: "Username Taken"}
     else
-    newUser User.find_or_create_by(user_params)
+    newUser = User.find_or_create_by(user_params)
     render json: newUser
     end
   end
