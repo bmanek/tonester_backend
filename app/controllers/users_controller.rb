@@ -17,15 +17,28 @@ class UsersController < ApplicationController
       
     end
   end
-
+  def update
+   
+    user = User.find(params[:id])
+    if user
+      user.update_attributes(user_params)
+      render json: user 
+    else 
+      render json: {message: "not edited"}
+    end
+  end
 
   def show
     render json: User.find(params[:id]), include: '**'
   end
 
   def create
-
-    render json: User.find_or_create_by(user_params)
+    if User.find_by(params[:usernae])
+      render json: {message: "Username Taken"}
+    else
+    newUser User.find_or_create_by(user_params)
+    render json: newUser
+    end
   end
 
   private
